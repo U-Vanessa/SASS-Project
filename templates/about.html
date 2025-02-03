@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me</title>
+  <style>
+    /* General Styles */
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    h1, h2, h3 {
+      color: #444;
+    }
+
+    a {
+      text-decoration: none;
+      color: #007BFF;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+/*Navigation*/
+    .header-main {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      background: #ffffff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 5px;
+  }
+  
+  .header-logo-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      margin-right: 20px;
+  }
+  
+  .header-main img {
+      height: 50px;
+      margin-right: 10px;
+  }
+  
+  .header-main h4 {
+      font-size: 16px;
+      margin: 0;
+      text-align: center;
+      color: #27627b;
+  }
+  
+  .header-main nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+  }
+  
+  .header-main nav ul li {
+      margin: 0 10px;
+  }
+  
+  .header-main nav ul li a {
+      text-decoration: none;
+      color: #514646;
+      padding: 10px;
+  }
+  
+  .header-main nav ul li a:hover {
+      background-color: #0534a3;
+      color: #fff;
+      border-radius: 5px;
+  }
+  
+  .header-main button {
+      background-color: #27627b;
+      color: #fff;
+      border: none;
+      padding: 8px 15px;
+      margin-left: 5px;
+      cursor: pointer;
+      border-radius: 5px;
+  }
+  
+  .header-main button:hover {
+      background-color: #385db5ba;
+  }
+    /* Container for Sections */
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2rem 0;
+    }
+
+    /* Hero Section */
+    .hero {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      margin-bottom: 3rem;
+    }
+
+    .hero img {
+      width: 45%;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .hero .story {
+      width: 55%;
+    }
+
+    .hero .story h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero .story p {
+      font-size: 1.1rem;
+      line-height: 1.8;
+    }
+
+    /* Skills Section */
+    .skills {
+      margin-bottom: 3rem;
+    }
+
+    .skills h2 {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .skills-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      justify-content: center;
+    }
+
+    .skill-card {
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 1.5rem;
+      width: 300px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    .skill-card img {
+      max-width: 100%;
+      border-radius: 10px;
+      margin-bottom: 1rem;
+    }
+
+    .skill-card h3 {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .skill-card p {
+      font-size: 1rem;
+      color: #666;
+    }
+
+    /* Footer */
+    footer {
+      background: #333;
+      color: #fff;
+      padding: 2rem 0;
+      text-align: center;
+    }
+
+    footer .contact-info {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    footer .contact-info a {
+      color: #fff;
+      font-size: 1.1rem;
+    }
+
+    footer .contact-info a:hover {
+      color: #007BFF;
+    }
+
+    footer p {
+      margin: 0;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <div class= "header-main">
+    <div class= "header-logo-container">
+      <img src= "/SASS/styles/images/My_logo.PNG">
+    </div>
+    
+     <nav>
+    <ul>
+      <li><a href="/SASS-Project/templates/index.html">Home</a></li>
+      <li><a href="/SASS-Project/templates/about.html">About</a></li>
+      <li><a href="/SASS-Project/templates/project.html">Projects</a></li>
+      <li><a href="/SASS-Project/templates/contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</div>
+
+  <!-- Hero Section -->
+  <div class="container">
+    <section class="hero">
+      <img src="/SASS-Project/styles/images/Mine.jpeg" alt="Your Picture">
+      <div class="story">
+        <h1>About Me</h1>
+        <p>
+          Hi, I'm Vanessa UWONKUNDA, a passionate creative professional with a love for  design and coding especial designing frontend web development. 
+          I have been working in this field for 2 years and have gained experience in Doing different internship like one of them in Rwanda Revenue Authority. 
+          My journey started when I joined African Leadership university. Since then, I've been dedicated to Agriculture and Technology at the same time.
+        </p>
+      </div>
+    </section>
+  </div>
+
+  <!-- Skills Section -->
+  <div class="container">
+    <section class="skills">
+      <h2>My Certificates</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <img src="/SASS-Project/styles/images/VA.png" alt="Certificate 1">
+          <h3>Certificate in Virtual Assistant</h3>
+          <p>The Virtual Assistant (VA) courses at ALX equip learners with essential administrative and organizational skills necessary for remote work. Students gain proficiency in tools and software that streamline workflows, enhancing productivity. This program emphasizes communication, time management, and adaptability, empowering individuals to thrive in diverse virtual environments and support various business needs.</p>
+        </div>
+        <div class="skill-card">
+          <img src="/SASS-Project/styles/images/PF.png" alt="Certificate 2">
+          <h3>Certificate in Professional Foundation</h3>
+          <p>ALX's Professional Foundation (PF) courses lay the groundwork for success in any career path. Covering essential topics such as communication, teamwork, and problem-solving, these courses foster personal and professional development. Students learn to navigate workplace dynamics effectively, preparing them to excel in their chosen fields and contribute meaningfully to their organizations..</p>
+        </div>
+        <div class="skill-card">
+          <img src="/SASS-Project/styles/images/AI.png" alt="Certificate 3">
+          <h3>Certificate in Carrier Essential Artificial Intelligence</h3>
+          <p>ALX's  Artificial Intelligence (AI) courses immerse students in the fundamentals of artificial intelligence, covering machine learning, neural networks, and data analytics. Participants engage in hands-on projects that enhance their skills in building intelligent systems. This training prepares them for a rapidly evolving tech landscape, fostering innovation and critical thinking in AI applications.</p>
+        </div>
+        <!-- Add more certificates as needed -->
+      </div>
+    </section>
+  </div>
+
+  <a href="./index.html" style="display: inline-block; padding: 1rem 2rem; background-color: #007BFF; color: white; text-decoration: none; border-radius: 4px; margin: 2rem 0; transition: background-color 0.3s;" onmouseover="this.style.backgroundColor='#007BFF'" onmouseout="this.style.backgroundColor='#007BFF'">Back to Home</a>
+
+  <!-- Footer -->
+  <footer>
+    <div class="contact-info">
+      <a href="mailto:yuwonkundavanessa3@gmail.com">uwonkundavanessa3@gmail.com</a>
+      <a href="https://www.instagram.com/LebronVanz23" target="_blank">Instagram</a>
+      <a href="tel:+250784486209">+250784486209</a>
+    </div>
+    <p>&copy; 2025. All rights reserved.</p>
+  </footer>
+</body>
+</html>

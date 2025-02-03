@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Projects</title>
+  <style>
+    /* General Styles */
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    h1, h2, h3 {
+      color: #444;
+    }
+
+    a {
+      text-decoration: none;
+      color: #007BFF;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* Navigation Bar */
+    .header-main {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      background: #ffffff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 5px;
+  }
+  
+  .header-logo-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      margin-right: 20px;
+  }
+  
+  .header-main img {
+      height: 50px;
+      margin-right: 10px;
+  }
+  
+  .header-main h4 {
+      font-size: 16px;
+      margin: 0;
+      text-align: center;
+      color: #27627b;
+  }
+  
+  .header-main nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+  }
+  
+  .header-main nav ul li {
+      margin: 0 10px;
+  }
+  
+  .header-main nav ul li a {
+      text-decoration: none;
+      color: #514646;
+      padding: 10px;
+  }
+  
+  .header-main nav ul li a:hover {
+      background-color: #0534a3;
+      color: #fff;
+      border-radius: 5px;
+  }
+  
+  .header-main button {
+      background-color: #27627b;
+      color: #fff;
+      border: none;
+      padding: 8px 15px;
+      margin-left: 5px;
+      cursor: pointer;
+      border-radius: 5px;
+  }
+  
+  .header-main button:hover {
+      background-color: #385db5ba;
+  }
+    /* Projects Section */
+    .projects {
+      padding: 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .projects h1 {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .project-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      justify-content: center;
+    }
+
+    .project-card {
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 1.5rem;
+      width: 300px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    .project-card img {
+      max-width: 100%;
+      border-radius: 10px;
+      margin-bottom: 1rem;
+    }
+
+    .project-card h3 {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .project-card p {
+      font-size: 1rem;
+      color: #666;
+    }
+
+    /* Sticky Footer */
+    footer {
+      position: sticky;
+      bottom: 0;
+      background: #333;
+      color: #fff;
+      padding: 1rem;
+      text-align: center;
+      z-index: 1000;
+    }
+
+    footer .contact-info {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    footer .contact-info a {
+      color: #fff;
+      font-size: 1.1rem;
+    }
+
+    footer .contact-info a:hover {
+      color: #007BFF;
+    }
+
+    footer p {
+      margin: 0;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <div class= "header-main">
+    <div class= "header-logo-container">
+      <img src= "/SASS-Project/styles/images/My_logo.PNG">
+    </div>
+    
+     <nav>
+    <ul>
+      <li><a href="/SASS-Project/templates/index.html">Home</a></li>
+      <li><a href="/SASS-Project/templates/about.html">About</a></li>
+      <li><a href="/SASS-Project/templates/project.html">Projects</a></li>
+      <li><a href="/SASS-Project/templates/contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</div>
+
+  <!-- Projects Section -->
+  <section class="projects">
+    <h1>My Projects</h1>
+    <div class="project-grid">
+      <!-- Project 1 -->
+      <div class="project-card">
+        <img src="/SASS-Project/styles/images/Project 1.jpeg" alt="Project 1">
+        <h3>Web Development</h3>
+        <p>DWebsite development involves creating and maintaining websites, encompassing design, coding, and content management. It integrates frontend and backend technologies to deliver user-friendly, responsive experiences, ensuring functionality, accessibility, and aesthetics across various devices and platforms.</p>
+      </div>
+      <!-- Project 2 -->
+      <div class="project-card">
+        <img src="/SASS-Project/styles/images/Project 2.jpeg" alt="Project 2">
+        <h3>UI/UX Designing</h3>
+        <p>UI/UX design focuses on enhancing user satisfaction by improving usability, accessibility, and interaction with products. It combines visual aesthetics and user research to create intuitive interfaces, ensuring a seamless and enjoyable experience across digital platforms.</p>
+      </div>
+      <!-- Project 3 -->
+      <div class="project-card">
+        <img src="/SASS-Project/styles/images/Project 3.jpeg" alt="Project 3">
+        <h3>Frontend Development</h3>
+        <p>Frontend development involves building the visual and interactive aspects of websites and applications. Using HTML, CSS, and JavaScript, developers create responsive designs that enhance user experience, ensuring functionality and aesthetics across various devices and screen sizes.</p>
+      </div>
+      <!-- Add more projects as needed -->
+    </div>
+  </section>
+
+  <a href="./index.html" style="display: inline-block; padding: 1rem 2rem; background-color: #007BFF; color: white; text-decoration: none; border-radius: 4px; margin: 2rem 0; transition: background-color 0.3s;" onmouseover="this.style.backgroundColor='#007BFF'" onmouseout="this.style.backgroundColor='#007BFF'">Back to Home</a>
+
+  <!-- Sticky Footer -->
+  <footer>
+    <div class="contact-info">
+      <a href="mailto:uwonkundavanessa3@gmail.com">uwonkundavanessa3@gmail.com</a>
+      <a href="https://www.instagram.com/LebronVanz23" target="_blank">Instagram</a>
+      <a href="tel:+250784486209">+250784486209</a>
+    </div>
+    <p>&copy; 2025. All rights reserved.</p>
+  </footer>
+</body>
+</html>

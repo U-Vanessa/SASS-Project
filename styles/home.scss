@@ -1,0 +1,21 @@
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background-color: $primary-color;
+    color: white;
+  
+    h1 {
+      font-size: $h1-size;
+      margin-bottom: 20px;
+    }
+  
+    p {
+      font-size: $body-text-size;
+      margin-bottom: 30px;
+    }
+  
+    .cta-button {
+      @include button($secondary-color, white);
+      text-decoration: none;
+    }
+  }

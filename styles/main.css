@@ -1,0 +1,197 @@
+
+
+/*# sourceMappingURL=main.css.map */
+/* Variables*/
+@primary-color: #3498db;
+@secondary-color: #2ecc71;
+@font-stack: 'Helvetica', sans-serif;
+
+/* Mixins*/
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Global Styles*/
+
+body {
+  font-family: font-stack;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: primary-color;
+  color: white;
+  padding: 1rem;
+  @include flex-center;
+
+  h1 {
+    margin: 0;
+  }
+
+  nav {
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      @include flex-center;
+
+      li {
+        margin: 0 1rem;
+
+        a {
+          color: white;
+          text-decoration: none;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}
+
+.hero {
+  background-color: secondary-color;
+  padding: 2rem;
+  text-align: center;
+}
+
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  background-color: primary-color;
+  color: white;
+
+  h1 {
+    font-size: h1-size;
+    margin-bottom: 20px;
+  }
+
+  p {
+    font-size: body-text-size;
+    margin-bottom: 30px;
+  }
+
+  .cta-button {
+    @include button($secondary-color, white);
+    text-decoration: none;
+  }
+}
+
+.about {
+  padding: 50px 20px;
+
+  h2 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .bio {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  .skills {
+    @include grid(2, 20px);
+
+    h3 {
+      grid-column: span 2;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+
+      li {
+        background-color: white;
+        padding: 10px;
+        border-radius: 5px;
+        text-align: center;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+    }
+  }
+}
+
+.projects {
+  padding: 50px 20px;
+
+  h2 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .project-grid {
+    @include grid(3, 20px);
+
+    .project {
+      background-color: white;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+      img {
+        width: 100%;
+        border-radius: 5px;
+        margin-bottom: 15px;
+      }
+
+      h3 {
+        font-size: $h3-size;
+        margin-bottom: 10px;
+      }
+
+      p {
+        font-size: $body-text-size;
+      }
+    }
+  }
+}
+
+.contact {
+  padding: 50px 20px;
+
+  h2 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .submit-button {
+      @include button($primary-color, white);
+      width: 100%;
+    }
+  }
+
+  .social-media {
+    text-align: center;
+    margin-top: 20px;
+
+    a {
+      margin: 0 10px;
+      color: $primary-color;
+      text-decoration: none;
+
+      &:hover {
+        color: darken($primary-color, 10%);
+      }
+    }
+  }
+}

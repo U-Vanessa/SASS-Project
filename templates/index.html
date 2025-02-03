@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Creative Portfolio</title>
+  <style>
+    /* General Styles */
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    h1, h2, h3 {
+      color: #444;
+    }
+
+    a {
+      text-decoration: none;
+      color: #007BFF;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .header-main {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      background: #ffffff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 5px;
+  }
+  
+  .header-logo-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      margin-right: 20px;
+  }
+  
+  .header-main img {
+      height: 50px;
+      margin-right: 10px;
+  }
+  
+  .header-main h4 {
+      font-size: 16px;
+      margin: 0;
+      text-align: center;
+      color: #27627b;
+  }
+  
+  .header-main nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+  }
+  
+  .header-main nav ul li {
+      margin: 0 10px;
+  }
+  
+  .header-main nav ul li a {
+      text-decoration: none;
+      color: #514646;
+      padding: 10px;
+  }
+  
+  .header-main nav ul li a:hover {
+      background-color: #0534a3;
+      color: #fff;
+      border-radius: 5px;
+  }
+  
+  .header-main button {
+      background-color: #27627b;
+      color: #fff;
+      border: none;
+      padding: 8px 15px;
+      margin-left: 5px;
+      cursor: pointer;
+      border-radius: 5px;
+  }
+  
+  .header-main button:hover {
+      background-color: #385db5ba;
+  }
+  
+    /* Sections */
+    section {
+      padding: 2rem;
+      text-align: center;
+    }
+
+    #home {
+      background: #f4f4f4;
+      padding: 4rem 2rem;
+    }
+
+    #home h1 {
+      font-size: 2.5rem;
+    }
+
+    #home .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background: #007BFF;
+      color: #fff;
+      border-radius: 5px;
+      margin-top: 1rem;
+    }
+
+    /* Projects Section */
+    .project-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+    }
+
+    .project {
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      padding: 1rem;
+      width: 300px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .project img {
+      max-width: 100%;
+      border-radius: 5px;
+    }
+
+    /* Blogs Section */
+    .blog-post {
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      padding: 1rem;
+      margin: 1rem auto;
+      max-width: 600px;
+      text-align: left;
+    }
+
+    /* Contact Section */
+    form {
+      max-width: 400px;
+      margin: 0 auto;
+      text-align: left;
+    }
+
+    form label {
+      display: block;
+      margin: 10px 0 5px;
+    }
+
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+
+    form button {
+      background: #007BFF;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    form button:hover {
+      background: #0056b3;
+    }
+
+    /* Footer */
+    footer {
+      background: #333;
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation Bar -->
+<div class= "header-main">
+    <div class= "header-logo-container">
+      <img src= "/SASS-Project/styles/images/My_logo.PNG">
+    </div>
+    
+     <nav>
+    <ul>
+      <li><a href="/SASS-Project/templates/index.html">Home</a></li>
+      <li><a href="/SASS-Project/templates/about.html">About</a></li>
+      <li><a href="/SASS-Project/templates/project.html">Projects</a></li>
+      <li><a href="/SASS-Project/templates/contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</div>
+
+  <!-- Home Section -->
+  <section id="home">
+    <h1>Welcome to My Portfolio</h1>
+    <p>Hi, I'm Vanessa UWONKUNDA, a passionate creative professional.</p>
+    <a href="/SASS-Project/templates/project.html" class="btn">View My Work</a>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>As a creative enthusiast, my journey into the world of technology began with a deep fascination for storytelling through design. I discovered that UI/UX design was my canvas, where I could blend aesthetics with functionality to create meaningful digital experiences. This passion led me to explore the intricacies of frontend web development, where every line of code became a brushstroke in my artistic expression.
+
+      Specializing as a Full Stack Developer, I embraced the challenge of mastering both the visual and technical aspects of web applications. My skills span HTML, CSS, JavaScript, and various frameworks, allowing me to build responsive, user-friendly interfaces that captivate users. I thrive on collaboration, working closely with teams to transform ideas into reality, always prioritizing the user experience.
+      
+      What drives me is the belief that technology should empower, connect, and inspire. I aim to create platforms that not only meet the needs of users but also leave a lasting impact. As I continue to grow and innovate in this ever-evolving field, I remain committed to learning and pushing boundaries. My journey is just beginning, and I’m excited to shape the future of digital design and development, one project at a time.</p>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>My Projects</h2>
+    <div class="project-grid">
+      <div class="project">
+        <img src="/SASS-Project/styles/images/Project 1.jpeg" alt="Project 1">
+        <h3> Website Development </h3>
+        <p>Website development involves creating and maintaining websites, encompassing design, coding, and content management. It integrates frontend and backend technologies to deliver user-friendly, responsive experiences, ensuring functionality, accessibility, and aesthetics across various devices and platforms.</p>
+      </div>
+      <div class="project">
+        <img src="/SASS-Project/styles/images/Project 2.jpeg" alt="Project 2">
+        <h3>UI/UX Design</h3>
+        <p>UI/UX design focuses on enhancing user satisfaction by improving usability, accessibility, and interaction with products. It combines visual aesthetics and user research to create intuitive interfaces, ensuring a seamless and enjoyable experience across digital platforms.</p>
+      </div>
+      <div class="project">
+        <img src="/SASS-Project/styles/images/Frontend-Development-(1).webp" alt="Project 2">
+        <h3>Frontend Development</h3>
+        <p>Frontend development involves building the visual and interactive aspects of websites and applications. Using HTML, CSS, and JavaScript, developers create responsive designs that enhance user experience, ensuring functionality and aesthetics across various devices and screen sizes.</p>
+      </div>
+      <!-- Add more projects as needed -->
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form action="#" method="post">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+      
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025. All rights reserved.</p>
+  </footer>
+</body>
+</html>
